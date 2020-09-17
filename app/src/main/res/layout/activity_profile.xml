@@ -26,26 +26,35 @@
             android:id="@+id/profile_pic"
             android:src="@color/cardview_dark_background" />
     </androidx.cardview.widget.CardView>
+
     <EditText
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Name"
-        android:id="@+id/name"
-        android:padding="5dp"
-        />
+        android:padding="5dp" />
+
+
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:padding="5dp"
-        android:id="@+id/email"
-        />
+        android:id="@+id/bio"
+        android:layout_width="370dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Bio"
+        android:inputType="textMultiLine" />
 
     <Button
+        android:id="@+id/profile_save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/profile_save_btn"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change profile image"
         />
 
 </LinearLayout>
